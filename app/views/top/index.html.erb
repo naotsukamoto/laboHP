@@ -3,12 +3,12 @@
 <!-- Wrapperに各ページへのリンクを設置 -->
 <%= link_to  "Home", root_path %>
 <%= link_to  "Member", users_index_path %>
+<%= link_to  "Reseach Overview", researchs_overview_path %>
+<%= link_to  "Reseach Work", researchs_work_path %>
 
 <!-- 以下、それぞれのコントローラを作りページを作成する -->
 <!-- erbのコメントアウトは下記のようにしたらできる -->
 <%- if false -%>
-<%= link_to  "Reseach Overview", _path %>
-<%= link_to  "Reseach Work", _path %>
 <%= link_to  "Album", _path %>
 <%= link_to  "Career", _path %>
 <%= link_to  "Schedule", _path %>
