@@ -7,3 +7,21 @@ body{
 h1{
   color:red;
 }
+
+.member-table{
+  margin:20px auto;
+  border-collapse:separate;
+  border-spacing:30px;
+}
+
+.member-table td{
+  height:400px;
+  width:400px;
+  border:solid 1px;
+  box-shadow: 0px 5px 5px;
+}
+
+.member-table td:nth-child(odd){
+  margin-right:20px;
+  color:orange;
+}

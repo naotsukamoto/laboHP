@@ -1,10 +1,12 @@
 <h1>Top#index</h1>
 
-<!-- Wrapperに各ページへのリンクを設置 -->
-<%= link_to  "Home", root_path %>
-<%= link_to  "Member", users_index_path %>
-<%= link_to  "Reseach Overview", researchs_overview_path %>
-<%= link_to  "Reseach Work", researchs_work_path %>
+<div class="wrapper">
+  <!-- Wrapperに各ページへのリンクを設置 -->
+  <%= link_to  "Home", root_path %>
+  <%= link_to  "Member", members_path %>
+  <%= link_to  "Reseach Overview", researchs_overview_path %>
+  <%= link_to  "Reseach Work", researchs_work_path %>
+</div>
 
 <!-- 以下、それぞれのコントローラを作りページを作成する -->
 <!-- erbのコメントアウトは下記のようにしたらできる -->

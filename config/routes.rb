@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   root to: 'top#index'
 
-  get 'users/index'
-
-  get 'users/show' => 'users#index'
+  get 'members' => 'users#index'
 
   get 'users/show/:username' => 'users#show'
 
