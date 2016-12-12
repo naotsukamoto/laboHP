@@ -1,3 +1,21 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header{
+  border-bottom: solid 1px #f2f;
+  height:150px;
+}
+
+#top-title{
+  text-align:left;
+}
+
+.top-link{
+  display:inline;
+}
+
+.top-main{
+  text-align:center;
+
+}
