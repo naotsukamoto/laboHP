@@ -1,0 +1,20 @@
+/* line 5, /vagrant/laboHP/app/assets/stylesheets/top.scss */
+.header {
+  border-bottom: solid 1px #f2f;
+  height: 150px;
+}
+
+/* line 10, /vagrant/laboHP/app/assets/stylesheets/top.scss */
+#top-title {
+  text-align: left;
+}
+
+/* line 14, /vagrant/laboHP/app/assets/stylesheets/top.scss */
+.top-link {
+  display: inline;
+}
+
+/* line 18, /vagrant/laboHP/app/assets/stylesheets/top.scss */
+.top-main {
+  text-align: center;
+}

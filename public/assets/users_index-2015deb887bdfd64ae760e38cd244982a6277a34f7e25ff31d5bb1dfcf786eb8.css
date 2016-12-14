@@ -1,0 +1,32 @@
+/* line 1, /vagrant/laboHP/app/assets/stylesheets/users_index.scss */
+body {
+  font-family: meiryo sans-serif;
+  color: green;
+  text-align: center;
+}
+
+/* line 7, /vagrant/laboHP/app/assets/stylesheets/users_index.scss */
+h1 {
+  color: red;
+}
+
+/* line 11, /vagrant/laboHP/app/assets/stylesheets/users_index.scss */
+.member-table {
+  margin: 20px auto;
+  border-collapse: separate;
+  border-spacing: 30px;
+}
+
+/* line 17, /vagrant/laboHP/app/assets/stylesheets/users_index.scss */
+.member-table td {
+  height: 400px;
+  width: 400px;
+  border: solid 1px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 24, /vagrant/laboHP/app/assets/stylesheets/users_index.scss */
+.member-table td:nth-child(odd) {
+  margin-right: 20px;
+  color: orange;
+}
