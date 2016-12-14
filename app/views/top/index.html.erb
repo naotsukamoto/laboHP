@@ -1,16 +1,26 @@
-<%= stylesheet_link_tag "top.scss", :media => "all" %>
+<%= stylesheet_link_tag "top", :media => "all" %>
 
 <body>
 
-  <div class="wrapper">
+  <div class="container">
     <div class="header">
       <h2 id="top-title">京都大学 東野研究室</h2>
       <!-- headerに各ページへのリンクを設置 -->
       <div class="top-link">
-        <%= link_to  "Home", root_path %>
-        <%= link_to  "Member", members_path %>
-        <%= link_to  "Reseach Overview", researchs_overview_path %>
-        <%= link_to  "Reseach Work", researchs_work_path %>
+        <div class="row">
+          <div class="col-md-6">
+            <%= link_to  "Home", root_path %>
+          </div>
+          <div class="col-md-6">
+            <%= link_to  "Member", members_path %>
+          </div>
+          <div class="col-md-6">
+            <%= link_to  "Reseach Overview", researchs_overview_path %>
+          </div>
+          <div class="col-md-6">
+            <%= link_to  "Reseach Work", researchs_work_path %>
+          </div>
+        </div>
       </div>
     </div>
 

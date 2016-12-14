@@ -1,30 +1,32 @@
-<%= stylesheet_link_tag "users_index.css.scss", :media => "all" %>
+<%= stylesheet_link_tag "users_index", :media => "all" %>
+
+<button class="btn btn-primary">a</button>
+
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <title>Tohno Labo</title>
 </head>
 <body>
-  <div class="wrapper"></div>
-  <div class="contents">
-    <h1>Members</h1>
-      <!-- ここはlabo menberの個人紹介ページ -->
-      <!-- ※現段階では個別のリンクを辿っているが、本当はココに全員分の紹介をしたい -->
-      <div class="member-box">
-        <table class="member-table">
-          <tr>
-            <td>あああ</td>
-            <td>いいい</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
+    <div class="wrapper"></div>
+    <div class="contents">
+      <h1>Members</h1>
+        <!-- ここはlabo menberの個人紹介ページ -->
+        <!-- ※現段階では個別のリンクを辿っているが、本当はココに全員分の紹介をしたい -->
+        <div class="member-box">
+          <table class="member-table">
+            <tr>
+              <td>あああ</td>
+              <td>いいい</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
 
-      <%= link_to "nao", '/users/show/naotter' %>
-  </div>
-
+        <%= link_to "nao", '/users/show/naotter' %>
+    </div>
 </body>
 </html>
