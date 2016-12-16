@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *
+ */
+/* line 7, /vagrant/laboHP/app/assets/stylesheets/partials/top.scss */
+.container {
+  text-align: center;
+}
+
+/* line 11, /vagrant/laboHP/app/assets/stylesheets/partials/top.scss */
+.header {
+  height: 150px;
+}
+
+/* line 15, /vagrant/laboHP/app/assets/stylesheets/partials/top.scss */
+#top-title {
+  text-align: left;
+  color: red;
+}
+
+/* line 20, /vagrant/laboHP/app/assets/stylesheets/partials/top.scss */
+.top-link {
+  display: inline;
+}
+
+/* line 24, /vagrant/laboHP/app/assets/stylesheets/partials/top.scss */
+.top-main {
+  text-align: center;
+}
+
+/* line 7, /vagrant/laboHP/app/assets/stylesheets/partials/users.scss */
+body {
+  font-family: meiryo sans-serif;
+  color: green;
+  text-align: center;
+}
+
+/* line 13, /vagrant/laboHP/app/assets/stylesheets/partials/users.scss */
+h1 {
+  color: red;
+}
+
+/* line 17, /vagrant/laboHP/app/assets/stylesheets/partials/users.scss */
+.member-table {
+  margin: 20px auto;
+  border-collapse: separate;
+  border-spacing: 30px;
+}
+
+/* line 23, /vagrant/laboHP/app/assets/stylesheets/partials/users.scss */
+.member-table td {
+  height: 400px;
+  width: 400px;
+  border: solid 1px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 30, /vagrant/laboHP/app/assets/stylesheets/partials/users.scss */
+.member-table td:nth-child(odd) {
+  margin-right: 20px;
+  color: orange;
+}

@@ -15,6 +15,5 @@
  */
 
  @import "bootstrap-sprockets";
- @import "bootstrap";
- @import "top";
- @import "users_index.css.scss";
+ @import "bootstrap";  
+ @import "partials/*";

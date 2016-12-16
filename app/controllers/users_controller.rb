@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
+
   def index
+    @page_title = "Members"
   end
 
   def show

@@ -1,11 +1,11 @@
-<%= stylesheet_link_tag "top", :media => "all" %>
 
 <body>
 
   <div class="container">
-    <div class="header">
-      <h2 id="top-title">京都大学 東野研究室</h2>
+    <!-- <div class="header">
+      <h2 id="top-title"><%= @page_title %></h2>
       <!-- headerに各ページへのリンクを設置 -->
+      <%- if false -%>
       <div class="top-link">
         <div class="row">
           <div class="col-md-6">
@@ -21,7 +21,9 @@
             <%= link_to  "Reseach Work", researchs_work_path %>
           </div>
         </div>
-      </div>
+      </div> -->
+      <%- end -%>
+
     </div>
 
     <!-- 以下、それぞれのコントローラを作りページを作成する -->
@@ -33,7 +35,7 @@
     <%= link_to  "Access", _path %>
     <%- end -%>
 
-    <div class="top-main">
+    <div id="contents">
       <h1>Top#index</h1>
       <p>Hey! This is page top!</p>
     </div>
