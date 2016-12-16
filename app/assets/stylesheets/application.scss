@@ -70,3 +70,12 @@ div.layerTransparent{
 p.footer-logo{
   font:30px bold;
 }
+
+// breadcrumb
+ul.breadcrumb{
+  text-align:left;
+  background:transparent;
+  li+li:before{
+    content: "≫";
+  }
+}
