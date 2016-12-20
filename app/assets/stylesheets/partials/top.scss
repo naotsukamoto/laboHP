@@ -2,10 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// @import "bootstrap";
+$gray: #A9A9A9;
+$somke-white: #f5f5f5;
 
-.container{
+.contents{
   text-align:center;
+  .contents-msg{
+    margin: 50px 0px;
+  }
 }
 
 .header{
@@ -23,6 +27,37 @@
 
 .top-main{
   text-align:center;
+}
 
+#news-table{
+  margin: 10px auto;
+  color:blue;
+  width:60%;
+  border:none;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  border-top: solid 1px #666;
+  border-bottom: solid 1px #666;
+  background: $somke-white;
+  tr{
+    height:40px;
+    th{
+      text-align:center;
+    }
+    td{
+      vertical-align: middle;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    td.bar{
+      height:1px;
+      margin:0px;
+      padding:0px;
+      border-top: 1px solid $gray;
+    }
+    td.data-date{
+      border-right:1px solid $gray;
+    }
 
+  }
 }

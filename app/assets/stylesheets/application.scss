@@ -30,8 +30,6 @@ div#container{
   height:100%;
   height:auto !important;
   min-height:100%;
-
-
   div#contents{
     padding-bottom:150px;
   }
@@ -42,7 +40,7 @@ div#footer{
   background-color: $greenYellow;
   height:150px;
   width:100%;
-  bottom:0;
+  // bottom:0;
   padding-top:30px;
 }
 
