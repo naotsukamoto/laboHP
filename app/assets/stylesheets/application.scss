@@ -45,38 +45,6 @@ div#footer{
 }
 
 
-// Carousel CSS
-.carousel{
-  height: 450px;
-  width: 600px;
-  margin:auto;
-  .item{
-    height: 100%;
-    img{
-      position: absolute;
-      height:450px;
-      width: 600px;
-    }
-  }
-}
-
-@media (min-width: 320px) {
-  .carousel,
-  .carousel .item,
-  .carousel .item-mask,
-  .carousel-inner .item .item-mask img {
-    height:200px;
-  }
-}
-
-@media (min-width: 768px) {
-  .carousel,
-  .carousel .item,
-  .carousel .item-mask,
-  .carousel-inner .item .item-mask img {
-    height:450px;
-  }
-}// Carousel CSS fin.
 
 #logo{
   margin-right: 20px;

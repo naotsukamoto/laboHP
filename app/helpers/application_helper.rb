@@ -8,4 +8,20 @@ module ApplicationHelper
   def menu_link_to(text, path)
     link_to_unless_current(text, path){ content_tag(:span, text)}
   end
+
+  def get_path_name(num)
+    # 現在地をパスで取得
+    full_path = request.path_info
+    @paths = full_path.split("/")
+    paths_name = @paths
+    # 先頭をrootにする
+    paths_name[0]="Home"
+    p paths_name[num]
+  end
+
+  def get_path(num)
+    pre_path = @paths
+    pre_path[0]=""
+    p pre_path.slice(0,num+1).join("/")
+  end
 end
