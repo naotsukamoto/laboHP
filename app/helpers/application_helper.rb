@@ -1,4 +1,7 @@
 module ApplicationHelper
+
+  @paths_size=0
+
   def page_title
     title = "Tohno Labo"
     title = @page_title + "-" + title if @page_title
@@ -24,4 +27,9 @@ module ApplicationHelper
     pre_path[0]=""
     p pre_path.slice(0,num+1).join("/")
   end
+
+  def making_breadcrumb(i)
+      content_tag(:li, menu_link_to(get_path_name(i), get_path(i)))
+  end
+
 end

@@ -20,15 +20,19 @@
 
       <!-- breadcrumbs:パンくずリスト -->
       <ul class="breadcrumb">
-        <li><a href="/"><%= get_path_name(0) %></a></li>
-        <li><a href="<%= get_path(1) %>"><%= get_path_name(1) %></a></li>
-        <li><a href="<%= get_path(2) %>"><%= get_path_name(2) %></a></li>
+        <% full_path = request.path_info %>
+        <% @paths = full_path.split("/") %>
+        <% @paths.length.times do |i| %>
+        <%= making_breadcrumb(i) %>
+        <% end %>
       </ul><!-- breadcrumb -->
 
+      <!-- contents -->
       <div id="contents" >
         <%= yield %>
       </div>
 
+      <!-- footer -->
       <div id="footer">
         <%= render "shared/footer" %>
       </div>

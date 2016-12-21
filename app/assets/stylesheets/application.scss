@@ -75,6 +75,7 @@ p.footer-logo{
 ul.breadcrumb{
   text-align:left;
   background:transparent;
+  
   li+li:before{
     content: "≫";
   }
