@@ -20,9 +20,8 @@
 
       <!-- breadcrumbs:パンくずリスト -->
       <ul class="breadcrumb">
-        <% full_path = request.path_info %>
-        <% @paths = full_path.split("/") %>
-        <% @paths.length.times do |i| %>
+        <%= making_breadcrumb(0) if now_path.empty? %>
+        <% (0...now_path.length).each do |i| %>
         <%= making_breadcrumb(i) %>
         <% end %>
       </ul><!-- breadcrumb -->

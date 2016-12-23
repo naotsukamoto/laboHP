@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get 'users/show/:username' => 'users#show'
 
+  get 'researchs' => 'researchs#index'
+
   get 'researchs/overview' => 'researchs#index'
 
   get 'researchs/work' => 'researchs#show'

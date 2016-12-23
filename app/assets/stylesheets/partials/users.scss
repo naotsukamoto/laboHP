@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// @import "bootstrap";
+$num:1;
 
 body{
   font-family:meiryo sans-serif;
@@ -18,16 +18,17 @@ h1{
   margin:20px auto;
   border-collapse:separate;
   border-spacing:30px;
-}
+  td{
+    height:300px;
+    width:300px;
+    border:solid 1px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  }
 
-.member-table td{
-  height:400px;
-  width:400px;
-  border:solid 1px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-}
+  td:nth-child(odd){
+    margin-right:20px;
+    color:orange;
+  }
 
-.member-table td:nth-child(odd){
-  margin-right:20px;
-  color:orange;
+
 }
