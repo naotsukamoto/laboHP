@@ -19,3 +19,24 @@
 @user.location = 'Yamaguchi, Japan'
 @user.about = 'Hi. I am Taro.'
 @user.save
+
+@head=Head.new
+@head.content='TOPページを更新しました1'
+@head.save
+
+@head=Head.new
+@head.content='TOPページを更新しました2'
+@head.save
+
+
+@head=Head.new
+@head.content='TOPページを更新しました3'
+@head.save
+
+@head=Head.new
+@head.content='TOPページを更新しました4'
+@head.save
+
+@head=Head.new
+@head.content='TOPページを更新しました5'
+@head.save

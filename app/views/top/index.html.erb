@@ -52,16 +52,23 @@
                   News Head
               </td>
           </tr>
+
+          <% @head.each do |n| %>
           <tr>
               <td class="bar" colspan="6"></td>
           </tr>
           <tr>
-              <th>FireFox</th>
+              <th>
+                <%= n.created_at.to_s(:datetime) %>
+              </th>
               <td class="data fst">
-                  タブ型
+                  <%= n.content %>
               </td>
           </tr>
-          <tr>
+          <% end %>
+
+
+          <!-- <tr>
               <td class="bar" colspan="6"></td>
           </tr>
           <tr>
@@ -78,7 +85,7 @@
               <td class="data fst">
                   7以降タブ型
               </td>
-          </tr>
+          </tr> -->
         </tbody>
     </table>
 
