@@ -44,11 +44,25 @@ div#footer{
   padding-top:30px;
 }
 
+div.footer-contents{
+  font-family:monospace;
+  #copyRight{
+    font-size: 10px;
+  }
+  .footer-logo{
+    font:30px bold;
+    font-family: 'Courier New';
+  }
+  
+}
+
 
 
 #logo{
   margin-right: 20px;
 }
+
+
 
 #site-title{
   family-weight: bold;
@@ -67,15 +81,13 @@ div.layerTransparent{
   background-color: rgba(255,255,255,0.8);
 }
 
-p.footer-logo{
-  font:30px bold;
-}
+
 
 // breadcrumb
 ul.breadcrumb{
   text-align:left;
   background:transparent;
-  
+
   li+li:before{
     content: "≫";
   }
