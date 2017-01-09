@@ -49,3 +49,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # bootstrap install gem by Sass, Scss
 gem 'bootstrap-sass', '~> 3.3.6'
+
+# admin
+gem 'devise'
+
+# install rails admin
+gem 'rails_admin'
