@@ -5,6 +5,6 @@ class ResearchsController < ApplicationController
   end
 
   def show
-    
+    @thesis = Study.all
   end
 end

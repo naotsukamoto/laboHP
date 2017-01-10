@@ -20,23 +20,8 @@
 @user.about = 'Hi. I am Taro.'
 @user.save
 
-@head=Head.new
-@head.content='TOPページを更新しました1'
-@head.save
-
-@head=Head.new
-@head.content='TOPページを更新しました2'
-@head.save
-
-
-@head=Head.new
-@head.content='TOPページを更新しました3'
-@head.save
-
-@head=Head.new
-@head.content='TOPページを更新しました4'
-@head.save
-
-@head=Head.new
-@head.content='TOPページを更新しました5'
-@head.save
+@thesis=Study.new
+@thesis.title='Evaluation A and B'
+@thesis.auther='Kyodai Taro'
+@thesis.published_year_at='2015'
+@thesis.save
