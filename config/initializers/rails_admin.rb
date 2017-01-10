@@ -8,6 +8,8 @@ RailsAdmin.config do |config|
   end
   config.current_user_method(&:current_admin_user)
 
+
+
   ## == Cancan ==
   # config.authorize_with :cancan
 

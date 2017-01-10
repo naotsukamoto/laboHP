@@ -5,6 +5,6 @@ class ResearchsController < ApplicationController
   end
 
   def show
-    @thesis = Study.all
+    @thesis = Study.all.order(published_year_at: :DESC)
   end
 end

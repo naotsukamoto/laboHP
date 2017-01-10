@@ -5,9 +5,9 @@
   <table class="news-table">
     <tbody>
       <tr class="head">
-          <th id="head">Date</th>
+          <th id="head">published Year</th>
           <td class="data fst" id="head">
-              News Head
+              Thesis Title
           </td>
       </tr>
 
@@ -17,7 +17,7 @@
       </tr>
       <tr>
           <th>
-            <%= t.created_at.to_s(:datetime) %>
+            <%= t.published_year_at %>
           </th>
           <td class="data fst">
               <%= t.title %>
