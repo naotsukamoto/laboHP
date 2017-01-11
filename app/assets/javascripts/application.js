@@ -12,7 +12,30 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require bootstrap-sprockets
 
 // require turbolinks
 // require_tree .
+
+// button of backing to pagetop with bootstrap
+$(function() {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが500に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+// button of backing to pagetop with bootstrap fin.

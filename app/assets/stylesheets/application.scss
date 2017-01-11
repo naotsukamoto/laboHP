@@ -20,6 +20,8 @@
 
 $azure: #F0FFFF;
 $greenYellow: #ADFF2F;
+$mediumAquaGreen: #66cdaa;
+$aquaMarine: #7fffd4;
 
 html,body{
   height:100%;
@@ -92,3 +94,31 @@ ul.breadcrumb{
     content: "≫";
   }
 }
+
+//button of backing to pagetop with bootstrap
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80%;
+    //pageTopボタンを最前面へ
+    z-index:1;
+
+    a {
+        background: $mediumAquaGreen;
+        text-decoration: none;
+        color: #fff;
+        width: 100px;
+        padding: 25px 0;
+        text-align: center;
+        display: block;
+        border-radius: 10px;
+        &:hover{
+          text-decoration: none;
+          background: $aquaMarine;
+          cursor:pointer;
+        }
+      }
+}
+
+//button of backing to pagetop with bootstrap fin.

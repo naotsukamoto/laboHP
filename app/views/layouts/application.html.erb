@@ -4,10 +4,13 @@
     <title><%= page_title %></title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body>  
+    <!-- back to pagetop with bootstrap -->
+    <p id="page-top"><a href="#">PAGE TOP</a></p>
+
     <!-- flash message from devise-->
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

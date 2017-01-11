@@ -2,11 +2,16 @@
 
 <div class="news">
   <p class="table-title">Research Work List</p>
-  <table class="news-table">
+  <table class="table-mainBox">
     <tbody>
       <tr class="head">
-          <th id="head">published Year</th>
-          <td class="data fst" id="head">
+          <th id="head-firstCol">
+            published Year
+          </th>
+          <th id="head">
+              Auther Name
+          </th>
+          <td class="data" id="head">
               Thesis Title
           </td>
       </tr>
@@ -16,12 +21,15 @@
           <td class="bar" colspan="6"></td>
       </tr>
       <tr>
-          <th>
-            <%= t.published_year_at %>
-          </th>
-          <td class="data fst">
-              <%= t.title %>
-          </td>
+        <th class="data-firstCol">
+          <%= t.published_year_at %>
+        </th>
+        <th class="data-secondCol">
+          <%= t.auther %>
+        </th>
+        <td class="data">
+            <%= t.title %>
+        </td>
       </tr>
       <% end %>
     </tbody>
