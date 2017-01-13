@@ -6,19 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-@user = User.new
-@user.name = 'nao tsukamoto'
-@user.username = 'naotter'
-@user.location = 'kyoto, Japan'
-@user.about = 'Hello, I am nao.'
-@user.save
-
-@user = User.new
-@user.name = 'Taro Tanaka'
-@user.username = 'tarot'
-@user.location = 'Yamaguchi, Japan'
-@user.about = 'Hi. I am Taro.'
-@user.save
 
 @thesis=Study.new
 @thesis.title='Evaluation A and B'

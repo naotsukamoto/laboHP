@@ -93,4 +93,20 @@
 
     </div>
   </div>
+
+  <p>image place</p>
+  <% @users.each do |u| %>
+  <%= u.image %>
+  <% end %>
+  <%- if false -%>
+  <%= image_tag @users.image.url %>
+  <% if @users.image? %>
+  <%= p "YES" %>
+  <% else %>
+  <%= p "no" %>
+  <% end %>
+  <%- end -%>
+
+
+
 </body>

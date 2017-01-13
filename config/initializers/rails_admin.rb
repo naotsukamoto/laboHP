@@ -40,4 +40,16 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  # Image Uploader carrierwave
+  config.model User do
+    edit do
+      field :name
+      field :username
+      field :location
+      field :about
+      field :image, :carrierwave
+    end
+  end
+
 end

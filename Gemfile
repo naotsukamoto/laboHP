@@ -54,3 +54,5 @@ gem 'devise'
 gem 'rails_admin'
 # Use jquery-turbolinks to use jquery under rails5
 gem 'jquery-turbolinks'
+# Image Uploader
+gem 'carrierwave'
