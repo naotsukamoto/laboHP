@@ -54,7 +54,7 @@
               </td>
           </tr>
 
-          <%= @head.each do |n| %>
+          <% @head.each do |n| %>
           <tr>
               <td class="bar" colspan="6"></td>
           </tr>
@@ -97,10 +97,11 @@
   <p>image place</p>
 
   <% @user.each do |u| %>
-    <%= u.name %> | <%= u.image? %> |
+    <span><%= u.name %><span> |
     <% if u.image.url != nil %>
-
-    <%= image_tag(u.image.url) %>
+    <span>
+      <%= image_tag(u.image.url, :alt => u.name, :size => '100x100') %>
+    </span>
     <% end %>
   </br>
   <% end %>

@@ -62,3 +62,5 @@ gem 'jquery-turbolinks'
 gem 'carrierwave'
 # Storage of Image
 gem 'cloudinary'
+# Resize images
+# gem 'rmagick'
