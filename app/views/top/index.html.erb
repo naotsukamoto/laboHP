@@ -95,17 +95,12 @@
   </div>
 
   <p>image place</p>
-  <% @users.each do |u| %>
-  <%= u.image %>
+
+  <% @user.each do |u| %>
+    <%= u.name %> | <%= u.image? %> | </br>
   <% end %>
-  <%- if false -%>
-  <%= image_tag @users.image.url %>
-  <% if @users.image? %>
-  <%= p "YES" %>
-  <% else %>
-  <%= p "no" %>
-  <% end %>
-  <%- end -%>
+
+
 
 
 

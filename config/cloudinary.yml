@@ -1,0 +1,9 @@
+production:
+  cloud_name: di4wldowe
+  api_key: "956344178115194"
+  api_secret: relbIQTBl68mgNAglWeHx6saRjQ
+
+development:
+  cloud_name: di4wldowe
+  api_key: "956344178115194"
+  api_secret: relbIQTBl68mgNAglWeHx6saRjQ

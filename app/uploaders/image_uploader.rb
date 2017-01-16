@@ -3,6 +3,13 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
+  include Cloudinary::CarrierWave
+
+  # convert the uploaded image to a PNG
+  # before storing it in the cloud
+  # and we want to assign it the post_picture tag
+  process :convert => 'png'
+  process :tags => ['post_picture']
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -40,14 +47,21 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
-  # def extension_whitelist
-  #   %w(jpg jpeg gif png)
-  # end
+  def extension_whitelist
+    %w(jpg jpeg gif png)
+  end
 
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
   # def filename
   #   "something.jpg" if original_filename
+  # end
+
+  # You can specify a custom Public ID.
+  # In the following example it is the content of
+  # the short_name attribute of the Post entity.
+  # def public_id
+  #   return model.short_name
   # end
 
 end

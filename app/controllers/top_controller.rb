@@ -2,9 +2,10 @@ class TopController < ApplicationController
   def index
     @page_title = "Top"
 
-    @head=Head.all.order(created_at: :DESC)
+    @head=Head.all.order(:created_at => :DESC)
 
-    @users=User.all
-
+    @user=User.all
   end
+
+  
 end
