@@ -54,7 +54,7 @@
               </td>
           </tr>
 
-          <% @head.each do |n| %>
+          <%= @head.each do |n| %>
           <tr>
               <td class="bar" colspan="6"></td>
           </tr>
@@ -99,6 +99,7 @@
   <% @user.each do |u| %>
     <%= u.name %> | <%= u.image? %> |
     <% if u.image.url != nil %>
+
     <%= image_tag(u.image.url) %>
     <% end %>
   </br>
