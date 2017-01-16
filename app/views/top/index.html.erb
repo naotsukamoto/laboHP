@@ -97,7 +97,11 @@
   <p>image place</p>
 
   <% @user.each do |u| %>
-    <%= u.name %> | <%= u.image? %> | </br>
+    <%= u.name %> | <%= u.image? %> |
+    <% if u.image.url != nil %>
+    <%= image_tag(u.image.url) %>
+    <% end %>
+  </br>
   <% end %>
 
 
