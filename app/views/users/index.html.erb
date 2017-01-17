@@ -8,18 +8,11 @@
     <div id="contents">
       <h1>Members</h1>
         <!-- ここはlabo menberの個人紹介ページ -->
-        <!-- ※現段階では個別のリンクを辿っているが、本当はココに全員分の紹介をしたい -->
         <div class="member-box">
           <table class="member-table">
-            <!-- 2行のテーブルを作る -->
-            <% @right_pic = false %>
-            <% @row_num = 4 %>
-            <% @j=1 %>
-            <% (@row_num*2).times do |i| %>
-            <% @right_pic=!@right_pic if i%2==1%>
-            <%= making_row(i,2) %>
-            <% making_col %>
-            <% end %>
+
+            <!-- Making members table -->
+            <% making_table(2) %>
           </table>
         </div>
     </div>

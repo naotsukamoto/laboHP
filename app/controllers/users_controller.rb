@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   def index
     @page_title = "Members"
+    @user = User.all
   end
 
   def show
