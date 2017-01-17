@@ -48,7 +48,7 @@ RailsAdmin.config do |config|
       field :username
       field :location
       field :about
-      field :image, :carrierwave
+      field :image, :carrierwave, :null => false
     end
   end
 

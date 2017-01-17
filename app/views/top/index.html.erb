@@ -94,17 +94,7 @@
     </div>
   </div>
 
-  <p>image place</p>
 
-  <% @user.each do |u| %>
-    <span><%= u.name %><span> |
-    <% if u.image.url != nil %>
-    <span>
-      <%= image_tag(u.image.url, :alt => u.name, :size => '100x100') %>
-    </span>
-    <% end %>
-  </br>
-  <% end %>
 
 
 

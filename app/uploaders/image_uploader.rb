@@ -43,9 +43,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   #   # do something
   # end
 
+
+
   # Create different versions of your uploaded files:
   version :thumb do
-    process resize_to_fit: [50, 50]
+    process resize_to_fit: [300, 300]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
@@ -63,8 +65,5 @@ class ImageUploader < CarrierWave::Uploader::Base
   # You can specify a custom Public ID.
   # In the following example it is the content of
   # the short_name attribute of the Post entity.
-  # def public_id
-  #   return model.short_name
-  # end
-
+  
 end

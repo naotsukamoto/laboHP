@@ -62,5 +62,10 @@ gem 'jquery-turbolinks'
 gem 'carrierwave'
 # Storage of Image
 gem 'cloudinary'
-# Resize images
-# gem 'rmagick'
+# heroku
+# gem 'heroku'
+
+# Including Google Map
+gem "gmaps4rails"
+# Changing from address to gratitude/latitude
+gem "geocoder"
