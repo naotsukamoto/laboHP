@@ -7,6 +7,6 @@ Overview
 ## Description
 
 ## Demo
-![Demo by gif](/Users/tsukamotonao/desktop/demo_labo.gif)
+![Demo by gif](demo_labo.gif)
 
 ##  
