@@ -7,5 +7,9 @@ class MapController < ApplicationController
       marker.infowindow location.description
       marker.json({title: location.title})
     end
-    end
+  end
+
+
+
+
 end
