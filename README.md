@@ -1,31 +1,12 @@
-The following is this site map...
+Our Labo Home Page
+===
 
-# TOP
+Overview
+私が所属する大学院の研究室では、現在運用しているHPをリニューアルすべく新しいページの作成を行なっています。
 
-## Home
-#### Home
+## Description
 
-## Research Overview
-#### Research Overview
-#### Research Theme
+## Demo
+![Demo by gif](/Users/tsukamotonao/desktop/demo_labo.gif)
 
-## Member
-#### Staff
-#### Student
-#### OB/OG
-
-## Research Work
-#### Conference
-#### Thesis
-
-## Album
-#### Album index
-
-## Career
-#### Career
-
-## Access
-#### Map
-
-## Schedule
-#### Year Schedule
+##  
