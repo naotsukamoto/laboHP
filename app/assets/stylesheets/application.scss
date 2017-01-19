@@ -17,6 +17,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "partials/*";
+@import "hue/*";
 
 $azure: #F0FFFF;
 $greenYellow: #ADFF2F;
@@ -39,8 +40,7 @@ div#container{
 
 div#footer{
   position:absolute;
-  background-color: $greenYellow;
-  height:150px;
+  height:75px;
   width:100%;
   // bottom:0;
   padding-top:30px;
@@ -48,12 +48,17 @@ div#footer{
 
 div.footer-contents{
   font-family:monospace;
+  padding:5px;
   #copyRight{
     font-size: 10px;
+    font: #000;
   }
-  .footer-logo{
-    font:30px bold;
-    font-family: 'Courier New';
+
+  .footerlinks{
+  }
+
+  .text-success{
+    font: #000;
   }
 
 }
@@ -101,22 +106,23 @@ ul.breadcrumb{
     bottom: 20px;
     right: 20px;
     font-size: 80%;
+    border-radius: 10px;
     //pageTopボタンを最前面へ
     z-index:1;
 
     a {
-        background: $mediumAquaGreen;
+        // background: $mediumAquaGreen;
         text-decoration: none;
-        color: #fff;
+        color: #ffe;
         width: 100px;
         padding: 25px 0;
         text-align: center;
         display: block;
-        border-radius: 10px;
         &:hover{
           text-decoration: none;
           background: $aquaMarine;
           cursor:pointer;
+          border-radius: 10px;
         }
       }
 }
