@@ -7,6 +7,6 @@ Our Labo Home Page
 ## Description
 
 ## Demo
-![Demo by gif](./demo_labo.gif)
+![Demo by gif](/demo/demo_labo.gif)
 
-##  
+##
