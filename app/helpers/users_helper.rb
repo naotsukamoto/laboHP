@@ -12,8 +12,8 @@ module UsersHelper
           # Set image on left side
           if c==0
             concat(
-              content_tag(:td) do
-                concat image_tag(u.image.url(:thumb), :size => '300x300')
+              content_tag(:td, :class => 'img-box') do
+                concat image_tag(u.image.url, :size => '300x300', :class => 'img-box')
               end
             )
           elsif c==1
@@ -25,8 +25,8 @@ module UsersHelper
             concat content_tag(:td, u.name)
           elsif c==1
             concat(
-              content_tag(:td) do
-                concat image_tag(u.image.url, :size => '300x300')
+              content_tag(:td, :class => 'img-box') do
+                concat image_tag(u.image.url, :size => '300x300', :class => 'img-box')
               end
             )
           end
