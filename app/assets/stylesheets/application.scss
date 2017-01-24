@@ -15,6 +15,8 @@
  */
 
 @import "bootstrap-sprockets";
+@import "bootstrap3-switch";
+@import "bootstrap2-switch";
 @import "bootstrap";
 @import "partials/*";
 @import "hue/*";
@@ -120,6 +122,4 @@ ul.breadcrumb{
           border-radius: 10px;
         }
       }
-}
-
-//button of backing to pagetop with bootstrap fin.
+}//button of backing to pagetop with bootstrap fin.

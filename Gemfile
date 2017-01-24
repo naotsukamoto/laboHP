@@ -72,3 +72,5 @@ gem "gmaps4rails"
 gem "geocoder"
 # Adding past rails4 plugin
 gem 'rails_12factor', group: :production
+# Using Bootstrap-switch
+gem 'bootstrap-switch-rails'

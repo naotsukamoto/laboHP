@@ -17,12 +17,12 @@ module UsersHelper
               end
             )
           elsif c==1
-            concat content_tag(:td, u.name)
+            concat content_tag(:td, simple_format(h("Name: #{u.name} \n Born from: #{u.location} \n Comment: #{u.about}" )))
           end
         elsif @isRight == true
           # Set image on right side
           if c==0
-            concat content_tag(:td, u.name)
+            concat content_tag(:td, simple_format(h("Name: #{u.name} \n Born from: #{u.location} \n Comment: #{u.about}" )))
           elsif c==1
             concat(
               content_tag(:td, :class => 'img-box') do

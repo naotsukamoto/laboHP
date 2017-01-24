@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
+//= require bootstrap-switch
 // require turbolinks
 //= require underscore
 //= require markerclusterer
@@ -39,5 +40,7 @@ $(function() {
         }, 500);
         return false;
     });
-});
-// button of backing to pagetop with bootstrap fin.
+});// button of backing to pagetop with bootstrap fin.
+
+// bootstrap switch
+$('#dimension-switch').bootstrapSwitch('setSizeClass', 'switch-large');
