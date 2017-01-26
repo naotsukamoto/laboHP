@@ -3,8 +3,8 @@
   <div id="contents">
     <h1>Members</h1></br>
 
-    <!-- switch button -->
-    <div class="btn-group" role="group" aria-label="Basic example" data-toggel="buttons">
+    <!-- switch button with button(html)-->
+    <!-- <div class="btn-group" role="group" aria-label="Basic example" data-toggel="buttons">
         <button class="btn btn-primary" id="tea">Teachers &nbsp;
           <span class="glyphicon glyphicon-pencil"></span>
         </button>
@@ -14,16 +14,17 @@
         <button class="btn btn-warning" id="obog">OB/OG &nbsp;
           <span class="glyphicon glyphicon-user"></span>
         </button>
-    </div></br>
+    </div></br> -->
 
+    <!-- switch button with link_to-->
+    <p>Push the button you want to know in this member's category</p>
     <div class="btn-group" role="group" aria-label="Basic example" data-toggel="buttons">
-      <%= button_to 'Teachers', members_path(:category => 'tea'), :class => 'btn btn-primary',:method => :get, :remote => true %>
-      <%= button_to 'Students', members_path(:category => 'stu'), :class => 'btn btn-success',:method => :get, :remote => true %>
-      <%= button_to 'OB/OG', members_path(:category => 'obog'), :class => 'btn btn-warning',:method => :get, :remote => true %>
+      <%= link_to 'Teachers ', members_path(:category => 'tea'), :class => 'btn btn-primary', :id => 'btn-0', :method => :get, :remote => true, :role => 'button' %>
+      <%= link_to 'Students ', members_path(:category => 'stu'), :class => 'btn btn-success',:id => 'btn-1',:method => :get, :remote => true, :role => 'button' %>
+      <%= link_to 'OB/OG ', members_path(:category => 'obog'), :class => 'btn btn-warning',:id => 'btn-2',:method => :get, :remote => true, :role => 'button' %>
     </div>
 
-
-    <div class="members-box"</div>
+    <div class="members-box"></div>
 
   </div>
 </div>
