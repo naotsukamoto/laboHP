@@ -4,13 +4,25 @@ class UsersController < ApplicationController
     @page_title = "Members"
 
     # Sort by category
-    @paths_name = now_path
-    if @paths_name[2] == "teachers"
+    # @paths_name = now_path
+    # if @paths_name[2] == "teachers"
+    #   @user = User.where(:category => 'tea')
+    # elsif @paths_name[2] == "students"
+    #   @user = User.where(:category => 'stu')
+    # elsif @paths_name[2] == "obog"
+    #   @user = User.where(:category => 'obog')
+    # else
+    #   @user = User.all
+    # end
+
+    if params['category'] == "tea"
       @user = User.where(:category => 'tea')
-    elsif @paths_name[2] == "students"
+    elsif params['category'] == "stu"
       @user = User.where(:category => 'stu')
-    elsif @paths_name[2] == "obog"
+    elsif params['category'] == "obog"
       @user = User.where(:category => 'obog')
+    else
+      @user = User.all
     end
   end
 
@@ -21,7 +33,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user=User.find_by(:username => params[:username])
+
   end
 
 

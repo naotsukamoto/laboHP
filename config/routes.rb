@@ -5,15 +5,7 @@ Rails.application.routes.draw do
   devise_for :admin_users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
-  get 'members' => 'users#top'
-
-  get 'members/teachers' => 'users#index'
-
-  get 'members/students' => 'users#index'
-
-  get 'members/obog' => 'users#index'
-
-  get 'users/show/:username' => 'users#show'
+  get 'members' => 'users#index'
 
   get 'researchs' => 'researchs#index'
 

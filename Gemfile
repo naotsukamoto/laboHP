@@ -74,3 +74,5 @@ gem "geocoder"
 gem 'rails_12factor', group: :production
 # Using Bootstrap-switch
 gem 'bootstrap-switch-rails'
+# Import data from local DB to heroku DB
+gem 'taps'

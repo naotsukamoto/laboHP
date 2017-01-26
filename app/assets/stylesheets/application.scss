@@ -79,13 +79,11 @@ hr#header-bottom{
 div#header{
   // background-image:image-url("header.jpg");
   height:150px;
+
+  .layerTransparent{
+    background-color: rgba(255,255,255,0.8);
+  }
 }
-
-div.layerTransparent{
-  background-color: rgba(255,255,255,0.8);
-}
-
-
 
 // breadcrumb
 ul.breadcrumb{

@@ -25,3 +25,6 @@ production:
   database: postgresql
   encoding: unicode
   pool: 5
+  username: nao
+  password: pgpass
+  host: localhost

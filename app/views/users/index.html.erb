@@ -1,22 +1,29 @@
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title><%= page_title %></title>
-</head>
-<body>
-  <div class="wrapper">
-    <div id="contents">
-      <h1>Members</h1>
-        <!-- ここはlabo menberの個人紹介ページ -->
-        <div class="member-box">
-          <table class="member-table">
 
-            <!-- Making members table -->
-            <!-- 引数は作りたいcolumnの数 -->
-            <% making_table(2) %>
-          </table>
-        </div>
+<div class="wrapper">
+  <div id="contents">
+    <h1>Members</h1></br>
+
+    <!-- switch button -->
+    <div class="btn-group" role="group" aria-label="Basic example" data-toggel="buttons">
+        <button class="btn btn-primary" id="tea">Teachers &nbsp;
+          <span class="glyphicon glyphicon-pencil"></span>
+        </button>
+        <button class="btn btn-success" id="stu">Students &nbsp;
+          <span class="glyphicon glyphicon-book"></span>
+        </button>
+        <button class="btn btn-warning" id="obog">OB/OG &nbsp;
+          <span class="glyphicon glyphicon-user"></span>
+        </button>
+    </div></br>
+
+    <div class="btn-group" role="group" aria-label="Basic example" data-toggel="buttons">
+      <%= button_to 'Teachers', members_path(:category => 'tea'), :class => 'btn btn-primary',:method => :get, :remote => true %>
+      <%= button_to 'Students', members_path(:category => 'stu'), :class => 'btn btn-success',:method => :get, :remote => true %>
+      <%= button_to 'OB/OG', members_path(:category => 'obog'), :class => 'btn btn-warning',:method => :get, :remote => true %>
     </div>
+
+
+    <div class="members-box"</div>
+
   </div>
-</body>
-</html>
+</div>
