@@ -15,14 +15,16 @@ class UsersController < ApplicationController
     #   @user = User.all
     # end
 
+    # we pull the object from users model each time of using ajax
     if params['category'] == "tea"
-      @user = User.where(:category => 'tea')
+      @user = User.where(:category => 'teacher')
     elsif params['category'] == "stu"
-      @user = User.where(:category => 'stu')
+      @user = User.where(:category => 'student')
     elsif params['category'] == "obog"
       @user = User.where(:category => 'obog')
     else
-      @user = User.all
+      # teachers data is defalut
+      @user = User.where(:category => 'teacher')
     end
   end
 

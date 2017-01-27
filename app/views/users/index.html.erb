@@ -1,4 +1,7 @@
-
+<!-- Users.jsを追加できない -->
+<%- if false-%>
+<%= javascript_include_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %> -->
+<%- end -%>
 <div class="wrapper">
   <div id="contents">
     <h1>Members</h1></br>
@@ -24,7 +27,15 @@
       <%= link_to 'OB/OG ', members_path(:category => 'obog'), :class => 'btn btn-warning',:id => 'btn-2',:method => :get, :remote => true, :role => 'button' %>
     </div>
 
-    <div class="members-box"></div>
+    <div class="members-box">
+      <!-- ここはlabo menberの個人紹介ページ -->
+      <table class="members-table">
+
+        <!-- Making members table -->
+        <!-- 引数は作りたいcolumnの数 -->
+        <% making_table(2) %>
+      </table>
+    </div>
 
   </div>
 </div>

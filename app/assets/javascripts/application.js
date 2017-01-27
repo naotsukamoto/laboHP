@@ -60,4 +60,4 @@ $(function(){
     }
     btn.appendChild(span);
   }
-})
+});
