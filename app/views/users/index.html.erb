@@ -2,6 +2,7 @@
 <%- if false-%>
 <%= javascript_include_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %> -->
 <%- end -%>
+
 <div class="wrapper">
   <div id="contents">
     <h1>Members</h1></br>
@@ -23,8 +24,8 @@
     <p>Push the button you want to know in this member's category</p>
     <div class="btn-group" role="group" aria-label="Basic example" data-toggel="buttons">
       <%= link_to 'Teachers ', members_path(:category => 'tea'), :class => 'btn btn-primary', :id => 'btn-0', :method => :get, :remote => true, :role => 'button' %>
-      <%= link_to 'Students ', members_path(:category => 'stu'), :class => 'btn btn-success',:id => 'btn-1',:method => :get, :remote => true, :role => 'button' %>
-      <%= link_to 'OB/OG ', members_path(:category => 'obog'), :class => 'btn btn-warning',:id => 'btn-2',:method => :get, :remote => true, :role => 'button' %>
+      <%= link_to 'Students ', members_path(:category => 'stu'), :class => 'btn btn-success', :id => 'btn-1', :method => :get, :remote => true, :role => 'button' %>
+      <%= link_to 'OB/OG ', members_path(:category => 'obog'), :class => 'btn btn-warning', :id => 'btn-2', :method => :get, :remote => true, :role => 'button' %>
     </div>
 
     <div class="members-box">
@@ -34,8 +35,30 @@
         <!-- Making members table -->
         <!-- 引数は作りたいcolumnの数 -->
         <% making_table(2) %>
+
       </table>
     </div>
 
   </div>
 </div>
+
+<script type="text/javascript">
+// glyphicon set to each button
+// member pageを読み込んだとき一瞬2個のgyphiconがでる
+$(function(){
+  for(var i=0;i<3;i++){
+    var span = document.createElement("span");
+    var btn = document.getElementById("btn-" + i);
+    if(i==0){
+      span.setAttribute("class", "glyphicon glyphicon-pencil");
+    }else if(i==1){
+      span.setAttribute("class", "glyphicon glyphicon-book");
+    }else{
+      span.setAttribute("class", "glyphicon glyphicon-user");
+    }
+    if(btn!=null){
+      btn.appendChild(span);
+    }
+  }
+});
+</script>

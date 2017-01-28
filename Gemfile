@@ -76,3 +76,5 @@ gem 'rails_12factor', group: :production
 gem 'bootstrap-switch-rails'
 # Import data from local DB to heroku DB
 gem 'taps'
+# Installing search form from database
+gem 'ransack'

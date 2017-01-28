@@ -41,6 +41,15 @@
     </a>
   </div><!-- Bootstrap: Carousel -->
 
+  <!-- search form -->
+  <%= search_form_for @search do |f| %>
+  <%= f.label :content, 'content' %>
+  <%= f.text_field :content %>
+  <div>
+    <%= f.submit 'search' %>
+  </div>
+  <% end %>
+
 
   <!-- News Head -->
     <div class="news">

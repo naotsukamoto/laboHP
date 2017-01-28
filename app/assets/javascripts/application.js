@@ -45,19 +45,3 @@ $(function() {
 // If teacher's button clicked...
 // ajax
 // ref: http://qiita.com/somewhatgood@github/items/113773747a6faa800366
-
-// glyphicon set to each button
-$(function(){
-  for(var i=0;i<3;i++){
-    var span = document.createElement("span");
-    var btn = document.getElementById("btn-" + i);
-    if(i==0){
-      span.setAttribute("class", "glyphicon glyphicon-pencil");
-    }else if(i==1){
-      span.setAttribute("class", "glyphicon glyphicon-book");
-    }else{
-      span.setAttribute("class", "glyphicon glyphicon-user");
-    }
-    btn.appendChild(span);
-  }
-});
