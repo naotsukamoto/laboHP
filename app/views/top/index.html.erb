@@ -41,67 +41,75 @@
     </a>
   </div><!-- Bootstrap: Carousel -->
 
+  <!-- News Head -->
+  <div class="news">
+    <p class="table-title">News Head Lineup</p>
+    <table class="table-mainBox">
+      <tbody>
+        <tr class="head">
+            <th id="head">Date</th>
+            <td class="data fst" id="head">
+                News Head
+            </td>
+        </tr>
+
+        <% @head.each do |n| %>
+        <tr>
+            <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+            <th>
+              <%= n.created_at.to_s(:datetime) %>
+            </th>
+            <td class="data fst">
+                <%= n.content %>
+            </td>
+        </tr>
+        <% end %>
+        <!-- News Head fin-->
+
+
+        <!-- <tr>
+            <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+            <th>Chrome</th>
+            <td class="data fst">
+                タブ型
+            </td>
+        </tr>
+        <tr>
+            <td class="bar" colspan="6"></td>
+        </tr>
+        <tr>
+            <th>IE</th>
+            <td class="data fst">
+                7以降タブ型
+            </td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+
   <!-- search form -->
-  <%= search_form_for @search do |f| %>
-  <%= f.label :content, 'content' %>
-  <%= f.text_field :content %>
+  <p>ransack trial</p>
+
+  <%= search_form_for @search, url: root_path do |f| %>
+  <%= f.label :content_cont, 'content' %>
+  <%= f.text_field :content_cont %>
   <div>
     <%= f.submit 'search' %>
   </div>
+  <%- end -%>
+
+  <% if !@results.nil? %>
+  <% @results.each do |r| %>
+  <%= r.content %></br>
+  <% end %>
+  <% else %>
+  <%= p "no" %>
   <% end %>
 
-
-  <!-- News Head -->
-    <div class="news">
-      <p class="table-title">News Head Lineup</p>
-      <table class="table-mainBox">
-        <tbody>
-          <tr class="head">
-              <th id="head">Date</th>
-              <td class="data fst" id="head">
-                  News Head
-              </td>
-          </tr>
-
-          <% @head.each do |n| %>
-          <tr>
-              <td class="bar" colspan="6"></td>
-          </tr>
-          <tr>
-              <th>
-                <%= n.created_at.to_s(:datetime) %>
-              </th>
-              <td class="data fst">
-                  <%= n.content %>
-              </td>
-          </tr>
-          <% end %>
-          <!-- News Head fin-->
-
-
-          <!-- <tr>
-              <td class="bar" colspan="6"></td>
-          </tr>
-          <tr>
-              <th>Chrome</th>
-              <td class="data fst">
-                  タブ型
-              </td>
-          </tr>
-          <tr>
-              <td class="bar" colspan="6"></td>
-          </tr>
-          <tr>
-              <th>IE</th>
-              <td class="data fst">
-                  7以降タブ型
-              </td>
-          </tr> -->
-        </tbody>
-    </table>
-
-    </div>
-  </div>
 
 
 
