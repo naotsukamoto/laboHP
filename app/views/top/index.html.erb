@@ -41,6 +41,15 @@
     </a>
   </div><!-- Bootstrap: Carousel -->
 
+  <!-- search form -->
+  <div class="search-box">
+    <%= search_form_for @search, url: root_path do |f| %>
+    <%= f.label :content_cont, 'Search News Head' %></br>
+    <%= f.text_field :content_cont, :class => "form-control" %>
+    <%= f.submit 'search', :class => 'btn btn-success' %>
+    <%- end -%>
+  </div>
+
   <!-- News Head -->
   <div class="news">
     <p class="table-title">News Head Lineup</p>
@@ -53,7 +62,7 @@
             </td>
         </tr>
 
-        <% @head.each do |n| %>
+        <% @heads.each do |n| %>
         <tr>
             <td class="bar" colspan="6"></td>
         </tr>
@@ -90,25 +99,6 @@
       </tbody>
     </table>
   </div>
-
-  <!-- search form -->
-  <p>ransack trial</p>
-
-  <%= search_form_for @search, url: root_path do |f| %>
-  <%= f.label :content_cont, 'content' %>
-  <%= f.text_field :content_cont %>
-  <div>
-    <%= f.submit 'search' %>
-  </div>
-  <%- end -%>
-
-  <% if !@results.nil? %>
-  <% @results.each do |r| %>
-  <%= r.content %></br>
-  <% end %>
-  <% else %>
-  <%= p "no" %>
-  <% end %>
 
 
 
