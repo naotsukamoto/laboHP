@@ -62,8 +62,11 @@ div.footer-contents{
 
 
 
-#logo{
+.logo{
   margin-right: 20px;
+  &:hover{
+    opacity:0.5;
+  }
 }
 
 
