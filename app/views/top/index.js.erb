@@ -1,0 +1,2 @@
+$(".table-mainBox").append("<%= escape_javascript(render 'head', object: @heads) %>");
+$(".read-more").replaceWith("<%= escape_javascript(link_to_next_page(@heads, 'more', remote: true, id: 'more_link')) %>");

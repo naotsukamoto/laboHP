@@ -78,3 +78,5 @@ gem 'bootstrap-switch-rails'
 gem 'taps'
 # Installing search form from database
 gem 'ransack'
+# Implimating "More read" function
+gem 'kaminari'

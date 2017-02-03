@@ -62,49 +62,18 @@
             </td>
         </tr>
 
-        <% @heads.each do |n| %>
-        <tr>
-            <td class="bar" colspan="6"></td>
-        </tr>
-        <tr>
-            <th>
-              <%= n.created_at.to_s(:datetime) %>
-            </th>
-            <td class="data fst">
-                <%= n.content %>
-            </td>
-        </tr>
-        <% end %>
+        <%= render :partial => "head" %>
+
         <!-- News Head fin-->
 
-
-        <!-- <tr>
-            <td class="bar" colspan="6"></td>
-        </tr>
-        <tr>
-            <th>Chrome</th>
-            <td class="data fst">
-                タブ型
-            </td>
-        </tr>
-        <tr>
-            <td class="bar" colspan="6"></td>
-        </tr>
-        <tr>
-            <th>IE</th>
-            <td class="data fst">
-                7以降タブ型
-            </td>
-        </tr> -->
       </tbody>
     </table>
-  </div>
+  </div><!-- News Head fin.-->
 
-
-
-
-
-
+  <!-- Read more link -->
+  <div class="read-more">
+    <%= link_to_next_page @heads, 'more', :remote => true, :class => 'glyphicon glyphicon-chevron-down',:id => 'read-more' %>
+  </div><!-- Read more link fin.-->
 
 
 </body>

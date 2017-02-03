@@ -140,3 +140,22 @@ $smoke-white: #f5f5f5;
     }
   } // news table css fin.
 }
+
+$read-more-height:20px;
+
+.read-more{
+  width: 900px;
+  height: $read-more-height;
+  // background: $smoke-white;
+  margin:0 auto;
+  margin-top:10px;
+  font-size:15px;
+  border-radius: 10px;
+  .glyphicon{
+    line-height: $read-more-height;
+  }
+  &:hover{
+    opacity:0.7;
+  }
+
+}

@@ -28,6 +28,7 @@ $aquaMarine: #7fffd4;
 
 html,body{
   height:100%;
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
 
 div#container{
@@ -65,7 +66,7 @@ div.footer-contents{
 .logo{
   margin-right: 20px;
   &:hover{
-    opacity:0.5;
+    opacity:0.9;
   }
 }
 

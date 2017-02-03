@@ -1,0 +1,13 @@
+<% @heads.each do |n| %>
+<tr>
+    <td class="bar" colspan="6"></td>
+</tr>
+<tr>
+    <th>
+      <%= n.created_at.to_s(:datetime) %>
+    </th>
+    <td class="data fst">
+        <%= n.content %>
+    </td>
+</tr>
+<% end %>
