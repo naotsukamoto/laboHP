@@ -52,7 +52,10 @@
 
   <!-- News Head -->
   <div class="news">
-    <p class="table-title">News Head Lineup</p>
+    <div class="news-header">
+      <span class="table-title">News Head Lineup</span>
+      <span class="page-info"><%= page_entries_info @heads, :remote => true %></span>
+    </div>
     <table class="table-mainBox">
       <tbody>
         <tr class="head">
@@ -72,8 +75,10 @@
 
   <!-- Read more link -->
   <div class="read-more">
-    <%= link_to_next_page @heads, 'more', :remote => true, :class => 'glyphicon glyphicon-chevron-down',:id => 'read-more' %>
+    <%= link_to_next_page @heads, 'more', :remote => true, :class => 'glyphicon glyphicon-chevron-down'%>
   </div><!-- Read more link fin.-->
-
-
+  <!-- Read more link -->
+  <div class="read-back">
+    <%= link_to_previous_page @heads, 'back', :remote => true, :class => 'glyphicon glyphicon-chevron-up'%>
+  </div><!-- Read more link fin.-->
 </body>

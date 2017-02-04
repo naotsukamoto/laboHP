@@ -1,2 +1,3 @@
-$(".table-mainBox").append("<%= escape_javascript(render 'head', object: @heads) %>");
-$(".read-more").replaceWith("<%= escape_javascript(link_to_next_page(@heads, 'more', remote: true, id: 'more_link')) %>");
+$(".table-mainBox").append("<%= j render 'head', object: @heads %>");
+$(".read-more").replaceWith("<%= j link_to_next_page(@heads, 'more', remote: true, :class => 'read-more glyphicon glyphicon-chevron-down') %>");
+$(".read-back").replaceWith("<%= j link_to_previous_page(@heads, 'back', remote: true, :class => 'read-back glyphicon glyphicon-chevron-up') %>");
