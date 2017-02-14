@@ -82,3 +82,5 @@ gem 'ransack'
 gem 'kaminari'
 # Using React.js on ruby on rails
 gem 'react-rails'
+# Markuped comment available
+gem 'marked-rails'
