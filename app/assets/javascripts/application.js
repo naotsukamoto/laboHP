@@ -19,6 +19,9 @@
 //= require markerclusterer
 //= require gmaps/google
 //= require turbolinks
+//= require react
+//= require react_ujs
+//= require components
 // require_tree .
 
 // button of backing to pagetop with bootstrap

@@ -80,3 +80,5 @@ gem 'taps'
 gem 'ransack'
 # Implimating "More read" function
 gem 'kaminari'
+# Using React.js on ruby on rails
+gem 'react-rails'

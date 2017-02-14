@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get 'carrier' => 'carriers#index'
 
+  get 'comments' => 'comments#index'
+
 
 
 
