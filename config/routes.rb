@@ -19,6 +19,12 @@ Rails.application.routes.draw do
 
   get 'comments' => 'comments#index'
 
+  namespace :api, format: 'json' do
+    namespace :v1 do
+      resources :comments
+    end
+  end
+
 
 
 
