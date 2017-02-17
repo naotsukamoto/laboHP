@@ -1,24 +1,8 @@
-<!-- Users.jsを追加できない -->
-<%- if false-%>
-<%= javascript_include_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %> -->
-<%- end -%>
+<%= javascript_include_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %>
 
 <div class="wrapper">
   <div id="contents">
     <h1>Members</h1></br>
-
-    <!-- switch button with button(html)-->
-    <!-- <div class="btn-group" role="group" aria-label="Basic example" data-toggel="buttons">
-        <button class="btn btn-primary" id="tea">Teachers &nbsp;
-          <span class="glyphicon glyphicon-pencil"></span>
-        </button>
-        <button class="btn btn-success" id="stu">Students &nbsp;
-          <span class="glyphicon glyphicon-book"></span>
-        </button>
-        <button class="btn btn-warning" id="obog">OB/OG &nbsp;
-          <span class="glyphicon glyphicon-user"></span>
-        </button>
-    </div></br> -->
 
     <!-- switch button with link_to-->
     <p>Push the button you want to know in this member's category</p>
@@ -41,24 +25,3 @@
 
   </div>
 </div>
-
-<script type="text/javascript">
-// glyphicon set to each button
-// member pageを読み込んだとき一瞬2個のgyphiconがでる
-$(function(){
-  for(var i=0;i<3;i++){
-    var span = document.createElement("span");
-    var btn = document.getElementById("btn-" + i);
-    if(i==0){
-      span.setAttribute("class", "glyphicon glyphicon-pencil");
-    }else if(i==1){
-      span.setAttribute("class", "glyphicon glyphicon-book");
-    }else{
-      span.setAttribute("class", "glyphicon glyphicon-user");
-    }
-    if(btn!=null){
-      btn.appendChild(span);
-    }
-  }
-});
-</script>
