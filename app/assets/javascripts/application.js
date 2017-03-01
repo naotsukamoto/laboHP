@@ -46,6 +46,20 @@ $(function() {
     });
 });// button of backing to pagetop with bootstrap fin.
 
+// small window open when pushing share buttons
+
+$(function() {
+    var shareButton = document.getElementsByClassName("azm-social");
+    for (var i = 0; i < shareButton.length; i++) {
+        shareButton[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            window.open(this.href, "SNS_window", "width=600, height=500, menubar=no, toolbar=no, scrollbars=yes");
+        }, false);
+    }
+})();
+
+
+
 // If teacher's button clicked...
 // ajax
 // ref: http://qiita.com/somewhatgood@github/items/113773747a6faa800366

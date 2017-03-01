@@ -84,3 +84,5 @@ gem 'kaminari'
 gem 'react-rails'
 # Markuped comment available
 gem 'marked-rails'
+# For using social icons
+gem 'font-awesome-sass'
